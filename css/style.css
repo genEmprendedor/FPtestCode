@@ -50,3 +50,29 @@ h3 {
 }
 
 /* end of globals */
+
+/* navbar */
+.header {
+  position: fixed;
+  width: 100%;
+
+  z-index: 3;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  background: white;
+}
+
+/* logo */
+.header .logo {
+  display: block;
+  float: left;
+  padding: 10px 15px;
+  /*text-decoration: none; */
+  font-family: "Josefin Sans", sans-serif;
+  font-display: optional;
+  color: #d4af37;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
