@@ -81,7 +81,8 @@ header img {
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  background: rgba(48, 48, 48, 0.99); /* a cambiar*/
+  /*background: rgba(48, 48, 48, 0.99); /* a cambiar*/
+  background: rgba(255, 255, 255, 0.97);
 }
 
 /* logo */
@@ -111,13 +112,14 @@ header img {
 
   /* border-right: 1px solid #f4f4f4; */
   text-decoration: none;
-  color: var(--bg-light-color);
+  /*color: var(--bg-light-color);*/
+  /*color: var(--bg-dark-color);*/
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
   /* background-color: #f4f4f4; */
-  color: var(--secondary-color);
+  color: red;
 }
 
 /* menu */
@@ -140,8 +142,7 @@ header img {
 }
 
 .header .menu-icon .navicon {
-  /* background: #333; */
-  background: white;
+  background: red;
   display: block;
   height: 2px;
   position: relative;
@@ -151,7 +152,7 @@ header img {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: white;
+  background: red;
   content: "";
   display: block;
   height: 100%;
@@ -210,3 +211,63 @@ header img {
     display: none;
   }
 }
+
+/* end of Navbar */
+
+/* showcase */
+#showcase .showcase-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1469480367508-d9487f86f766?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#showcase h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+  font-family: cursive;
+  font-display: optional;
+}
+@media (max-width: 768px) {
+  #showcase h1 {
+    font-size: 3rem;
+  }
+}
+
+#showcase h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+  color: aquamarine;
+}
+@media (max-width: 768px) {
+  #showcase h3 {
+    font-size: 1.25rem;
+  }
+}
+
+#showcase .btn-showcase {
+  border-width: 2px;
+  font-size: 1.1rem;
+  border-color: white;
+  padding: 0.75rem;
+}
+
+#showcase .btn-showcase:hover {
+  border-color: white;
+  background: white;
+  color: black;
+}
+
+/* end of Showcase */
