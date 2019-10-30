@@ -1,281 +1,52 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
+/* globals */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Helvetica", Optional, sans-serif;
+  color: #505962;
   line-height: 1.4;
+}
+
+.container {
+  max-width: 2048px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
-}
-
-p {
-  margin: 0.75rem 0;
-}
-
-/* Utility Classes */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 2rem;
-  overflow: hidden;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-primary {
-  /*color: #93cb52; */
-  color: #ff0000;
-}
-
-.bg-light {
-  background: #f4f4f4;
-  color: #333;
-}
-
-.bg-dark {
-  background: #333;
-  color: #fff;
-}
-
-.l-heading {
-  font-size: 4rem;
-  margin-top: -1.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.1;
-}
-
-.m-heading {
-  font-size: 2rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.1;
-}
-
-.lead {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
-
-.py-1 {
-  padding: 1.5rem 0;
-}
-.py-2 {
-  padding: 2rem 0;
-}
-.py-3 {
-  padding: 3rem 0;
-}
-
-.p-1 {
-  padding: 1.5rem;
-}
-.p-2 {
-  padding: 2rem;
-}
-.p-3 {
-  padding: 3rem;
+  color: #000;
 }
 
 .btn {
-  display: inline-block;
-  color: #000000;
-  /*background: #93cb52; */
-  background: #00ffff;
-  padding: 0.5rem 2rem;
-  border: none;
+  background: inherit;
+  color: inherit;
+  padding: 3.25px;
   border-radius: 5px;
+  border: 1px solid black;
 }
 
-.btn:hover {
-  /*background: #7ab436; */
-  background: #00ff00;
-}
-
-.btn-dark {
-  background: #333;
-  color: #fff;
-}
-
-.list {
-  margin: 0.5rem 0;
-  list-style: none;
-}
-
-.list li {
-  padding: 0.5rem 0;
-  border-bottom: #444 dotted 1px;
-}
-
-/* Navbar */
-#navbar {
-  display: flex;
-  position: sticky;
-  top: 0;
-  background: #; /*#fff */
-  color: #; /*#333*/
-  justify-content: space-between;
-  z-index: 1;
-  padding: 1rem;
-}
-
-#navbar img {
-  max-width: 5%;
-  
-}
-
-#navbar h1 {
-  margin-left: -4rem;
-}
-
-#navbar ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-
-#navbar ul li a {
-  color: #333; /*#fff*/
-  padding: 0.75rem;
-  margin: 0 0.25rem;
-}
-
-#navbar ul li a:hover {
-  background: #00ffff; /* #00ffff*/
-  border-radius: 5px;
-  color: #000000; /*#000000;*/
-}
-
-/* Showcase */
-#showcase {
-  background: #333
-    url("https://images.unsplash.com/photo-1491557345352-5929e343eb89?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")
-    no-repeat center center/cover;
-  height: 100vh;
-  color: #fff;
-}
-
-#showcase .showcase-content {
-  display: flex;
-  flex-direction: column;
+.heading-underline {
+  width: 10vw;
+  height: 0.25rem;
+  background-color: red;
+  margin: 0 auto 1rem;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 0 2rem;
-  /* Overlay */
-  position: absolute;
-  top: 65px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Section: Subastas */
-#subastas .items {
-  display: flex;
-  padding: 1rem;
+h2 {
+  font-size: 2rem;
 }
 
-#subastas .items .item {
-  flex: 1;
-  text-align: center;
-  padding: 1rem;
+h3 {
+  font-size: 1rem;
 }
 
-#subastas .items .item i {
-  background: #00ffff;
-  padding: 1rem;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-#subastas p {
-  text-align: justify;
-}
-
-/* Section: Nosotros */
-#nosotros {
-  display: flex;
-}
-
-#nosotros div {
-  flex: 1;
-}
-
-#nosotros .nosotros-img {
-  background: url("https://images.unsplash.com/photo-1429497910812-c176b05eced0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60")
-    no-repeat center center/cover;
-}
-
-/* Nuestras Marcas */
-#clients .items {
-  display: flex;
-}
-
-#clients .items img {
-  display: block;
-  margin: auto;
-  width: 90%;
-  height: 90%;
-}
-
-/* Section: Subastas */
-#subastas .items {
-  display: flex;
-  padding: 1rem;
-}
-
-#subastas .items .item {
-  flex: 1;
-  text-align: center;
-  padding: 1rem;
-}
-
-/* Contacto */
-#contacto .items .item i {
-  background: #00ffff;
-  color: #000000;
-  padding: 1rem;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-#contacto .items {
-  display: flex;
-  padding: 1rem;
-}
-
-#contacto .items .item {
-  flex: 1;
-  text-align: center;
-  padding: 1rem;
-}
-
-#contacto a {
-  color: #fff
-}
-
-#contacto a:hover {
-  background: #00ff00;
-  color: #000000;
-  border-radius: 5px;
-}
-
-footer i {
-  color: red;
-}
-
-footer a:hover {
-  color: #D4AF37;
-}
+/* end of globals */
