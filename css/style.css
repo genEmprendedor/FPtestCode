@@ -45,11 +45,12 @@ a {
 }
 
 .heading-underline {
-  width: 10vw;
+  width: 10rem;
   height: 0.25rem;
   background-color: red;
   margin: 0 auto 1rem;
   text-align: center;
+  margin-top: 1rem;
 }
 
 h2 {
