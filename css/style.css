@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 
+:root {
+  --logo-color: #d4af37 !important;
+  --main-color: white;
+  --navbar-color: rgba(0, 0, 0, 0.6);
+  --primary-color: #d4af37;
+  --secondary-color: aquamarine;
+  --bg-light-color: #f5f5f5; /* white smoke */
+  --bg-dark-color: #dcdcdc; /* gainsboro grey */
+}
+
 /* globals */
 * {
   margin: 0;
@@ -52,6 +62,15 @@ h3 {
 
 /* end of globals */
 
+/* Logo*/
+header img {
+  height: 1.5rem;
+  width: auto;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-top: 0rem;
+}
+
 /* navbar */
 .header {
   position: fixed;
@@ -62,15 +81,16 @@ h3 {
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  background: rgba(48, 48, 48, 0.99);
+  background: rgba(48, 48, 48, 0.99); /* a cambiar*/
 }
 
 /* logo */
 .header .logo {
-  display: block;
-  float: left;
-  padding: 10px 15px;
+  display: inline-block;
+  /*float: left;*/
+  /*padding: 10px 15px; */
   /*text-decoration: none; */
+  margin-top: 0.8rem;
   font-family: "Josefin Sans", sans-serif;
   font-display: optional;
   color: #d4af37;
