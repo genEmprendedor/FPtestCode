@@ -444,6 +444,20 @@ header img {
 
 /* end of Portfolio*/
 
+.readyToPaint {
+  text-align: center;
+  margin: 1rem;
+}
+
+.readyToPaint p {
+  margin: 1rem;
+}
+
+.readyToPaint a:hover {
+  color: red;
+  font-weight: bold;
+}
+
 /* Footer */
 footer {
   color: #7e868a;
