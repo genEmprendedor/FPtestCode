@@ -50,7 +50,8 @@ a {
   background-color: red;
   margin: 0 auto 1rem;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -279,29 +280,35 @@ header img {
   background: var(--bg-light-color);
 }
 
+.service-container h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
 .service-container h3 {
   text-align: center;
   font-size: 1.5rem;
-  margin-top: 2.5rem;
+  margin-top: 3.5rem;
   margin-bottom: 1rem;
   color: var(--text-color);
 }
 
 .service-container p {
   font-size: 1rem;
-  margin-bottom: 0.5rem;
+  text-align: left;
+  margin: 1rem;
 }
 
-.clientele2-container h4 {
+/*.clientele2-container h4 {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   text-align: center;
   font-size: 1.25rem;
-}
+} */
 
 .service-container img {
   width: 100%;
-  height: 20rem;
+  height: 25rem;
 }
 
 .grid-business {
@@ -333,6 +340,15 @@ header img {
   align-items: center;
   justify-content: center;
   height: 10vh;
+}
+
+.action {
+  margin-top: 1rem;
+}
+
+.action:hover {
+  color: red;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
